@@ -4,14 +4,14 @@
 
 This project focuses on manual testing of the Amazon Android mobile application to evaluate its functionality, usability, and compatibility.
 
-The testing was performed manually on a real Android device. Test cases were designed to verify positive scenarios, negative scenarios, and basic edge cases across important application modules.
+Testing was performed manually on a real Android device. Test cases were designed to verify positive scenarios, negative scenarios, and basic edge cases across important application modules.
 
 ## 🎯 Project Objectives
 
-- Understand the manual testing process.
+- Understand and practise the manual testing process.
 - Design and execute test cases for mobile application functionalities.
 - Validate application behaviour using positive and negative test scenarios.
-- Identify and document potential defects.
+- Identify, document, and report application defects.
 - Prepare test execution reports and test summaries.
 
 ## 📱 Application Details
@@ -31,52 +31,78 @@ The testing was performed manually on a real Android device. Test cases were des
 
 The following modules were covered:
 
-1. **Login Testing**
-   - Valid mobile number and correct OTP
-   - Incorrect OTP
-   - Empty mobile number
-   - Invalid mobile number
+### 1. Login Testing
+- Valid mobile number and correct OTP
+- Incorrect OTP
+- Empty mobile number
+- Invalid mobile number
 
-2. **Search Testing**
-   - Valid product search
-   - Invalid search input
-   - Empty search
+### 2. Search Testing
+- Valid product search
+- Invalid search input
+- Empty search
+- Special characters and irrelevant search results
 
-3. **Cart Testing**
-   - Adding products to cart
-   - Increasing and decreasing product quantity
-   - Removing items from cart
+### 3. Cart Testing
+- Adding products to cart
+- Increasing and decreasing product quantity
+- Removing items from cart
 
-4. **Checkout Testing**
-   - Invalid coupon code
-   - Back navigation during checkout
+### 4. Checkout Testing
+- Invalid coupon code
+- Back navigation during checkout
 
-5. **Usability Testing**
-   - Screen rotation
-   - Layout and data consistency
+### 5. Usability Testing
+- Screen rotation
+- Layout and data consistency
 
-6. **Compatibility Testing**
-   - Internet disconnection
-   - Incoming call interruption
+### 6. Compatibility Testing
+- Internet disconnection
+- Incoming call interruption
 
 ## 🧪 Testing Approach
 
-- Manual black-box testing.
+- Manual black-box testing on a real Android device.
 - Positive and negative test case execution.
 - Validation of actual results against expected results.
 - Basic UI and usability checks.
 - Documentation of test execution results.
+- Defect reporting with reproduction steps, severity, priority, and screenshot evidence.
 
 ## 📊 Test Execution Summary
 
 | Metric | Count |
 |---|---:|
 | Total Test Cases | 15 |
-| Passed | 15 |
-| Failed | 0 |
-| Defects Logged | 0 |
+| Passed | 14 |
+| Failed | 1 |
+| Defects Identified | 1 |
+
+**Test Result:** One defect was identified in the Search module. The application displayed irrelevant search results when special characters (`@#$%^`) were entered instead of displaying an appropriate no-results message.
 
 *Results reflect only the selected test scenarios executed in the specified test environment.*
+
+## 🐞 Defect Report
+
+| Item | Details |
+|---|---|
+| Bug ID | BUG-001 |
+| Module | Search |
+| Related Test Case | TC06 |
+| Defect Title | Irrelevant search results displayed for special character input |
+| Severity | Low |
+| Priority | Low |
+| Status | New |
+
+**Steps to Reproduce:**
+1. Open the Amazon application.
+2. Tap the Search bar.
+3. Enter special characters (`@#$%^`).
+4. Submit the search.
+
+**Expected Result:** An appropriate no-results message should be displayed.
+
+**Actual Result:** Irrelevant search results were displayed instead of a no-results message. The application remained stable.
 
 ## 🛠️ Skills Demonstrated
 
@@ -88,12 +114,9 @@ The following modules were covered:
 - Test Case Design
 - Test Execution
 - Positive and Negative Testing
-- Defect Reporting
+- Defect Identification and Reporting
 - Test Documentation
 - Severity and Priority Analysis
-- Smoke Testing
-- Sanity Testing
-- Regression Testing
 
 ## 📚 Testing Concepts Learned
 
@@ -106,15 +129,25 @@ The following modules were covered:
 - Regression Testing
 - Test Execution and Reporting
 
+## 📂 Project Structure
+
+```text
+Amazon-Mobile-App-Manual-Testing/
+│
+├── README.md
+│
+└── Test-Case-Document/
+    └── Amazon_Mobile_App_Test_Cases.pdf
+```
+
 ## 👩‍💻 Author
 
 **Sai Sangeetha Padakanti**
 
 B.Tech – Computer Science and Engineering
 
-GitHub: [saisangeetha-25](https://github.com/saisangeetha-25)
-
-LinkedIn: [Sai Sangeetha Padakanti](https://www.linkedin.com/in/saisangeethapadakanti/)
+- GitHub: https://github.com/saisangeetha-25
+- LinkedIn: https://www.linkedin.com/in/saisangeethapadakanti/
 
 ---
 
